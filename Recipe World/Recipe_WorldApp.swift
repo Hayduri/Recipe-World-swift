@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import Firebase
+import UIKit
 
 @main
 struct Recipe_WorldApp: App {
@@ -13,8 +15,14 @@ struct Recipe_WorldApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            Recipe_wrldListScreen()
+            
         }
+    }
+}
+
+extension Recipe_WorldApp {
+    private func setupAuthentication() {
+        FirebaseApp.configure()
     }
 }
