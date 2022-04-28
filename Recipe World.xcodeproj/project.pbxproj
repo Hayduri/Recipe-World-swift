@@ -31,6 +31,8 @@
 		CC13ABE9281A96F6002FAA4D /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC13ABE8281A96F6002FAA4D /* TabBar.swift */; };
 		CC13ABEB281A9AFA002FAA4D /* RecipeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC13ABEA281A9AFA002FAA4D /* RecipeModel.swift */; };
 		CC13ABED281A9E93002FAA4D /* RecipeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC13ABEC281A9E93002FAA4D /* RecipeCard.swift */; };
+		CC13ABEF281AA72A002FAA4D /* tes123.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC13ABEE281AA72A002FAA4D /* tes123.swift */; };
+		CC13ABF1281AA742002FAA4D /* test1234.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC13ABF0281AA742002FAA4D /* test1234.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +74,8 @@
 		CC13ABE8281A96F6002FAA4D /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		CC13ABEA281A9AFA002FAA4D /* RecipeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeModel.swift; sourceTree = "<group>"; };
 		CC13ABEC281A9E93002FAA4D /* RecipeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCard.swift; sourceTree = "<group>"; };
+		CC13ABEE281AA72A002FAA4D /* tes123.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tes123.swift; sourceTree = "<group>"; };
+		CC13ABF0281AA742002FAA4D /* test1234.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test1234.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +172,7 @@
 		513E422127F468D900B8BDCB /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				CC13ABF0281AA742002FAA4D /* test1234.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -208,6 +213,7 @@
 		CC13ABD6281A9353002FAA4D /* Detail */ = {
 			isa = PBXGroup;
 			children = (
+				CC13ABEE281AA72A002FAA4D /* tes123.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -362,8 +368,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC13ABEF281AA72A002FAA4D /* tes123.swift in Sources */,
 				5108D8A527F3820A00E30090 /* Recipe_World.xcdatamodeld in Sources */,
 				CC13ABEB281A9AFA002FAA4D /* RecipeModel.swift in Sources */,
+				CC13ABF1281AA742002FAA4D /* test1234.swift in Sources */,
 				5108D8A227F3820A00E30090 /* Persistence.swift in Sources */,
 				CC13ABDB281A9387002FAA4D /* CategoryView.swift in Sources */,
 				CC13ABE3281A93C5002FAA4D /* SettingsView.swift in Sources */,
