@@ -15,7 +15,7 @@ struct Recipe_WorldApp: App {
 
     var body: some Scene {
         WindowGroup {
-            Recipe_wrldListScreen()
+            ContentView()
             
         }
     }

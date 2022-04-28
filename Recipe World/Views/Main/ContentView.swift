@@ -10,8 +10,13 @@ import CoreData
 
 struct ContentView: View {
     var body: some View {
-        Text ("Recipe World")
-            .padding()
+        TabBar()
+    }
+}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
     }
 }
 
