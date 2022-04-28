@@ -14,6 +14,16 @@ struct RecipeCard: View {
     var body: some View {
         VStack {
         AsyncImage(url: URL(string: recipe.image)) {image in image
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .overlay(alignment: .bottom) {
+                    Text(recipe.name)
+                        .font(.headline)
+                        .foregroundColor(.white)
+                        .shadow(color: .black, radius: 3, x: 0, y: 0)
+                        .frame(maxWidth: 136)
+                        .padding()
+                }
         } placeholder: {
             Image(systemName: "photo")
                 .resizable()
