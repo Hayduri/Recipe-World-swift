@@ -16,6 +16,7 @@ struct AddNewRecipeView: View {
     @State private var link: String = ""
     @State private var navigateToCurrentRecipe = false
    // @Environment(\.dismiss) var dismiss
+    @EnvironmentObject var recipeWorldViewModel: RecipeWorldViewModel
     
     var body: some View {
         NavigationView {
@@ -56,10 +57,11 @@ struct AddNewRecipeView: View {
                 } */
                 ToolbarItem {
                     NavigationLink(isActive: $navigateToCurrentRecipe) {
-                        RecipeSiteView(recipe: Recipe.all.sorted{$0.datePublished > $1.datePublished} [0])
-                            .navigationBarBackButtonHidden(true)
+                        RecipeSiteView(recipe: recipeWorldViewModel.recipes.sorted{$0.datePublished > $1.datePublished} [0])
+                            .navigationBarBackButtonHidden(false)
                     } label: {
                         Button {
+                            saveNewRecipe()
                             navigateToCurrentRecipe = true
                         } label: {
                             Label("Done", systemImage: "checkmark")
@@ -80,5 +82,17 @@ struct AddNewRecipeView: View {
 struct AddNewRecipeView_Previews: PreviewProvider {
     static var previews: some View {
         AddNewRecipeView()
+    }
+}
+
+extension AddNewRecipeView {
+    private func saveNewRecipe() {
+        let time = Date()
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-mm-dd"
+        
+        let dateOfPublishment = dateFormatter.string(from: time)
+        let newRecipe = Recipe(name: name, image: "", description: description, ingredients: ingredients, procedure: procedure, category: selectedCategory.rawValue, datePublished: dateOfPublishment, url: "")
+        recipeWorldViewModel.addNewRecipe(recipe: newRecipe)
     }
 }
