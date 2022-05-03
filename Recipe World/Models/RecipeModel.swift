@@ -8,7 +8,8 @@
 import Foundation
 import SwiftUI
 
-enum Category: String {
+enum Category: String, CaseIterable, Identifiable {
+    var id: String {self.rawValue}
     case breakfast = "Breakfast"
     case soup = "Soup"
     case salad = "Salad"
@@ -34,11 +35,11 @@ struct Recipe: Identifiable {
 
 extension Recipe {
     static let all: [Recipe] = [
-        Recipe(name: "Burger", image: "https://upload.wikimedia.org/wikipedia/commons/0/0b/RedDot_Burger.jpg", description: "Super delicous", ingredients: "Meat and bread", procedure: "Just do it", category: "main", datePublished: "2019-11-11", url: "https://www.forksoverknives.com/recipes/vegan-soups-stews/creamy-carrot-soup/"),
-        Recipe(name: "Burger", image: "https://upload.wikimedia.org/wikipedia/commons/0/0b/RedDot_Burger.jpg", description: "Super delicous", ingredients: "Meat and bread", procedure: "Just do it", category: "main", datePublished: "2019-11-11", url: "https://www.forksoverknives.com/recipes/vegan-soups-stews/creamy-carrot-soup/"),
-        Recipe(name: "Burger", image: "https://upload.wikimedia.org/wikipedia/commons/0/0b/RedDot_Burger.jpg", description: "Super delicous", ingredients: "Meat and bread", procedure: "Just do it", category: "main", datePublished: "2019-11-11", url: "https://www.forksoverknives.com/recipes/vegan-soups-stews/creamy-carrot-soup/"),
-        Recipe(name: "Burger", image: "https://upload.wikimedia.org/wikipedia/commons/0/0b/RedDot_Burger.jpg", description: "Super delicous", ingredients: "Meat and bread", procedure: "Just do it", category: "main", datePublished: "2019-11-11", url: "https://www.forksoverknives.com/recipes/vegan-soups-stews/creamy-carrot-soup/"),
-        Recipe(name: "Burger", image: "https://upload.wikimedia.org/wikipedia/commons/0/0b/RedDot_Burger.jpg", description: "Super delicous", ingredients: "Meat and bread", procedure: "Just do it", category: "main", datePublished: "2019-11-11", url: "https://www.forksoverknives.com/recipes/vegan-soups-stews/creamy-carrot-soup/"),
+        Recipe(name: "Burger", image: "https://upload.wikimedia.org/wikipedia/commons/0/0b/RedDot_Burger.jpg", description: "Super delicous", ingredients: "Meat and bread", procedure: "Just do it", category: "Main", datePublished: "2019-11-11", url: "https://www.forksoverknives.com/recipes/vegan-soups-stews/creamy-carrot-soup/"),
+        Recipe(name: "Burger", image: "https://upload.wikimedia.org/wikipedia/commons/0/0b/RedDot_Burger.jpg", description: "Super delicous", ingredients: "Meat and bread", procedure: "Just do it", category: "Main", datePublished: "2019-11-11", url: "https://www.forksoverknives.com/recipes/vegan-soups-stews/creamy-carrot-soup/"),
+        Recipe(name: "Burger", image: "https://upload.wikimedia.org/wikipedia/commons/0/0b/RedDot_Burger.jpg", description: "Super delicous", ingredients: "Meat and bread", procedure: "Just do it", category: "Main", datePublished: "2019-11-11", url: "https://www.forksoverknives.com/recipes/vegan-soups-stews/creamy-carrot-soup/"),
+        Recipe(name: "Burger", image: "https://upload.wikimedia.org/wikipedia/commons/0/0b/RedDot_Burger.jpg", description: "Super delicous", ingredients: "Meat and bread", procedure: "Just do it", category: "Main", datePublished: "2019-11-11", url: "https://www.forksoverknives.com/recipes/vegan-soups-stews/creamy-carrot-soup/"),
+        Recipe(name: "Burger", image: "https://upload.wikimedia.org/wikipedia/commons/0/0b/RedDot_Burger.jpg", description: "Super delicous", ingredients: "Meat and bread", procedure: "Just do it", category: "Main", datePublished: "2019-11-11", url: "https://www.forksoverknives.com/recipes/vegan-soups-stews/creamy-carrot-soup/"),
 
     ]
 }

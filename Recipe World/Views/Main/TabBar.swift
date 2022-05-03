@@ -18,7 +18,7 @@ struct TabBar: View {
                 .tabItem {
                     Label("Categories", systemImage: "square.fill.text.grid.1x2")
                 }
-            NewRecipeView()
+            AddNewRecipeView()
                 .tabItem {
                     Label("New", systemImage: "plus")
                 }
@@ -26,9 +26,9 @@ struct TabBar: View {
                 .tabItem {
                     Label("Favorites", systemImage: "heart")
                 }
-            SettingsView()
+            ProfileView()
                 .tabItem {
-                    Label("Settings", systemImage: "gear")
+                    Label("Profile", systemImage: "person")
                 }
         }
     }

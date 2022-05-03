@@ -56,6 +56,24 @@ struct RecipeSiteView: View {
                         Text(recipe.description)
                     }
                     }
+                    
+                    if !recipe.url.isEmpty {
+                    VStack(alignment: .leading, spacing: 20) {
+                        Text("Link")
+                            .font(.headline)
+                        
+                        Text(recipe.url)
+                    }
+                    }
+                    
+                    if !recipe.datePublished.isEmpty {
+                    VStack(alignment: .leading, spacing: 20) {
+                        Text("Date published:")
+                            .font(.headline)
+                        
+                        Text(recipe.datePublished)
+                    }
+                    }
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
             }
