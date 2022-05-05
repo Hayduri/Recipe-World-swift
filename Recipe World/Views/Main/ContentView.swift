@@ -9,8 +9,12 @@ import SwiftUI
 import CoreData
 
 struct ContentView: View {
+    
+    @StateObject var favorites = Favorites()
+    
     var body: some View {
         TabBar()
+            .environmentObject(favorites)
     }
 }
 

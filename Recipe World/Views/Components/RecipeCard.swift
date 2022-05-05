@@ -10,6 +10,7 @@ import AVFoundation
 
 struct RecipeCard: View {
     var recipe: Recipe
+    @StateObject var favorites = Favorites()
     
     var body: some View {
         VStack {
@@ -24,6 +25,13 @@ struct RecipeCard: View {
                         .frame(maxWidth: 136)
                         .padding()
                 }
+                .overlay(alignment: .top) {
+                    if favorites.contains(recipe) {
+                        Image(systemName: "heart.fill")
+                            .foregroundColor(.red)
+                    }
+                }
+                
         } placeholder: {
             Image(systemName: "photo")
                 .resizable()

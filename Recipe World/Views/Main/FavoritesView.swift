@@ -8,10 +8,13 @@
 import SwiftUI
 
 struct FavoritesView: View {
+    @EnvironmentObject var recipeWorldViewModel: RecipeWorldViewModel
     var body: some View {
         NavigationView {
-        Text("Favorites")
-                .navigationTitle("Favorites")
+            ScrollView {
+                RecipeList(recipes: recipeWorldViewModel.recipes)
+            }
+            .navigationTitle("Explore recipes")
         }
         .navigationViewStyle(.stack)
     }

@@ -9,6 +9,7 @@ import SwiftUI
 
 struct RecipeSiteView: View {
     var recipe: Recipe
+    @EnvironmentObject var favorites: Favorites
     
     var body: some View {
         ScrollView {
@@ -74,8 +75,22 @@ struct RecipeSiteView: View {
                         Text(recipe.datePublished)
                     }
                     }
+                    
+                    Button(favorites.contains(recipe) ? "Remove from favorites" : "Add to favorites") {
+                        if favorites.contains(recipe) {
+                            favorites.remove(recipe)
+                        } else {
+                            favorites.add(recipe)
+        
+                        }
+                    }
+                    .frame(maxWidth: .infinity)
+                    .buttonStyle(.borderedProminent)
+                    .padding()
+                    
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
+                
             }
             .padding()
         }
@@ -87,5 +102,7 @@ struct RecipeSiteView: View {
 struct RecipeSiteView_Previews: PreviewProvider {
     static var previews: some View {
         RecipeSiteView(recipe: Recipe.all[0])
+            .environmentObject(Favorites())
     }
+      
 }
