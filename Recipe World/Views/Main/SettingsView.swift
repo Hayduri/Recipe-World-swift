@@ -7,18 +7,18 @@
 
 import SwiftUI
 
-struct ProfileView: View {
+struct SettingsView: View {
     var body: some View {
         NavigationView {
-        Text("Profile")
-                .navigationTitle("Profile")
+        Text("Settings")
+                .navigationTitle("Settings")
         }
         .navigationViewStyle(.stack)
     }
 }
 
-struct ProfileView_Previews: PreviewProvider {
+struct SeetingsView_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileView()
+        SettingsView()
     }
 }

@@ -26,9 +26,9 @@ struct TabBar: View {
                 .tabItem {
                     Label("Favorites", systemImage: "heart")
                 }
-            ProfileView()
+            SettingsView()
                 .tabItem {
-                    Label("Profile", systemImage: "person")
+                    Label("Settings", systemImage: "gear")
                 }
         }
     }
