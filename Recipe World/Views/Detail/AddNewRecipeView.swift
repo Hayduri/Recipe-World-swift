@@ -89,7 +89,7 @@ extension AddNewRecipeView {
     private func saveNewRecipe() {
         let time = Date()
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-mm-dd"
+        dateFormatter.dateFormat = "yyyy-MM-dd"
         
         let dateOfPublishment = dateFormatter.string(from: time)
         let newRecipe = Recipe(name: name, image: "", description: description, ingredients: ingredients, procedure: procedure, category: selectedCategory.rawValue, datePublished: dateOfPublishment, url: "")
