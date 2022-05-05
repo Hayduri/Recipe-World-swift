@@ -10,6 +10,8 @@ import AVFoundation
 
 struct RecipeCard: View {
     var recipe: Recipe
+    @Environment(\.managedObjectContext) var moc
+    @FetchRequest(sortDescriptors: []) var recipeData: FetchedResults<RecipeData>
     
     var body: some View {
         VStack {

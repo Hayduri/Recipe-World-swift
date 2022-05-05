@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct RecipeList: View {
+    @Environment(\.managedObjectContext) var moc
     var recipes: [Recipe]
     var body: some View {
         VStack {

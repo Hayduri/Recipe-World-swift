@@ -11,12 +11,13 @@ import UIKit
 
 @main
 struct Recipe_WorldApp: App {
-    let persistenceController = PersistenceController.shared
+    @StateObject private var dataController = DataController()
 
     var body: some Scene {
         WindowGroup {
             ContentView()
-            
+                .environment(\.managedObjectContext,dataController.container.viewContext)
+             
         }
     }
 }
