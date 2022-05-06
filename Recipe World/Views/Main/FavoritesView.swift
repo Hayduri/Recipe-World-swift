@@ -14,7 +14,7 @@ struct FavoritesView: View {
             ScrollView {
                 RecipeList(recipes: recipeWorldViewModel.recipes)
             }
-            .navigationTitle("Explore recipes")
+            .navigationTitle("Your favorite recipes")
         }
         .navigationViewStyle(.stack)
     }

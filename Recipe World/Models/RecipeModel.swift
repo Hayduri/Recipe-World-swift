@@ -3,7 +3,6 @@
 //  Recipe World
 //
 //  Created by Nicklas Olabi on 28/04/2022.
-//
 
 import Foundation
 import SwiftUI
