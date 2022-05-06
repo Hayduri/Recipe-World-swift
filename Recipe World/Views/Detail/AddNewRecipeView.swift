@@ -98,7 +98,7 @@ extension AddNewRecipeView {
         dateFormatter.dateFormat = "yyyy-MM-dd"
         
         let dateOfPublishment = dateFormatter.string(from: time)
-        let newRecipe = Recipe(name: name, image: image, description: description, ingredients: ingredients, procedure: procedure, category: selectedCategory.rawValue, datePublished: dateOfPublishment, url: "")
+        let newRecipe = Recipe(name: name, image: image, description: description, ingredients: ingredients, procedure: procedure, category: selectedCategory.rawValue, datePublished: dateOfPublishment, url: link)
         recipeWorldViewModel.addNewRecipe(recipe: newRecipe)
     }
 }
