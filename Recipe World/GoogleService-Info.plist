@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>816645382119-sgm4s06e9lhu79r3erj2fgaj7snvnpm2.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.816645382119-sgm4s06e9lhu79r3erj2fgaj7snvnpm2</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCbMXxvoS4jGgJhUb-LvA9svHi2aoUWDyc</string>
+	<key>GCM_SENDER_ID</key>
+	<string>816645382119</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>SWIFT.Recipe-World</string>
+	<key>PROJECT_ID</key>
+	<string>recipewrld-swift</string>
+	<key>STORAGE_BUCKET</key>
+	<string>recipewrld-swift.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:816645382119:ios:053cddb4df2533c6a0e742</string>
+</dict>
+</plist>
